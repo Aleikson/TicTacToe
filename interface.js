@@ -1,8 +1,8 @@
 const containerModal = document.querySelector('[data-modal="container"]');
 const btnClose = document.querySelector('[data-modal="close"]');
 const btnRestart = document.querySelector('[data-modal="restart"]');
-const statusTxt = document.querySelector('#status');
 const turnTxt = document.querySelector('#turn');
+const statusTxt = document.querySelector('#status');
 
 document.addEventListener('DOMContentLoaded', () => {
 

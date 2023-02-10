@@ -11,15 +11,16 @@ h1 {
     color: #000000;
 }
 
-.stage {
-    text-align: center;
-}
 
 .status {
     font-size: 70px;
     display: flex;
     justify-content: center;
     font-family: cursive;
+}
+
+.stage {
+    text-align: center;
 }
 
 #turn {
