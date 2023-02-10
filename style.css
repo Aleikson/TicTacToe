@@ -1,0 +1,134 @@
+body {
+    text-align: center;
+    background: linear-gradient(to right, #5433FF, #20BDFF, #A5FECB);
+}
+
+h1 {
+    font-family: 'Sans Comic Sans';
+    font-style: italic;
+    text-align: center;
+    font-size: 50px;
+    color: #000000;
+}
+
+.stage {
+    text-align: center;
+}
+
+.status {
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+}
+
+#turn {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #E4E5E6;
+    border: solid 1px #000000;
+    display: inline-block;
+    box-shadow: 0px 8px 15px 5px #00416a;
+}
+
+.o {
+    position: relative;
+    color: #292E49;
+}
+
+.o::after {
+    position: absolute;
+    content: "X";
+    font-size: 60px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.x {
+    position: relative;
+    color: #292E49;
+}
+
+.x::after {
+    position: absolute;
+    content: "O";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.modal-container {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container.active {
+    display: flex;
+}
+
+.modal {
+    color: white;
+    font-size: 35px;
+}
+
+.modal button{
+    padding: 20px;
+    font-size: 20px;
+    background-color: #e3e3e3;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -30px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.active .modal {
+    animation: modal .3s forwards;
+}
+
+.close {
+    height: 50px;
+    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 30%);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+@keyframes blink {
+    50% {
+      opacity: 0.2;
+    }
+  }
+  
+  .blink {
+    animation: blink 1s linear infinite;
+  }
