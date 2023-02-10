@@ -35,23 +35,23 @@ function handleMove(position) {
 
 function isWin() {
     for (let i = 0; i < winStates.length; i++) {
-      let seq = winStates[i];
-  
-      let pos1 = seq[0];
-      let pos2 = seq[1];
-      let pos3 = seq[2];
-  
-      if (board[pos1] == board[pos2] &&
-          board[pos1] == board[pos3] &&
-          board[pos1] != '') {
-  
-        let squares = document.querySelectorAll(".square");
-        squares[pos1].classList.add("blink");
-        squares[pos2].classList.add("blink");
-        squares[pos3].classList.add("blink");
-  
-        return true;
-      }
+        let seq = winStates[i];
+
+        let pos1 = seq[0];
+        let pos2 = seq[1];
+        let pos3 = seq[2];
+
+        if (board[pos1] == board[pos2] &&
+            board[pos1] == board[pos3] &&
+            board[pos1] != '') {
+
+            let squares = document.querySelectorAll(".square");
+            squares[pos1].classList.add("blink");
+            squares[pos2].classList.add("blink");
+            squares[pos3].classList.add("blink");
+
+            return true;
+        }
     }
     return false;
-  }
+}

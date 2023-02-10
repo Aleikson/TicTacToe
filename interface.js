@@ -21,7 +21,7 @@ function handleClick(event) {
 
     if (board[position] !== '') {
         return;
-      }
+    }
 
     if (handleMove(position)) {
         setTimeout(() => {

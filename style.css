@@ -90,7 +90,7 @@ h1 {
     font-size: 35px;
 }
 
-.modal button{
+.modal button {
     padding: 20px;
     font-size: 20px;
     background-color: #e3e3e3;
@@ -125,10 +125,10 @@ h1 {
 
 @keyframes blink {
     50% {
-      opacity: 0.2;
+        opacity: 0.2;
     }
-  }
-  
-  .blink {
+}
+
+.blink {
     animation: blink 1s linear infinite;
-  }
+}
